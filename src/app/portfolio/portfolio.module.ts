@@ -5,13 +5,15 @@ import { BgComponent } from './bg/bg.component';
 import { PortfolioComponent } from './portfolio.component';
 import { CardPrincipalComponent } from './card-principal/card-principal.component';
 import { GridComponent } from './grid/grid.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
     declarations: [
         PortfolioComponent,
         BgComponent,
         CardPrincipalComponent,
-        GridComponent
+        GridComponent,
+        MenuComponent
     ],
     exports: [
         PortfolioComponent,

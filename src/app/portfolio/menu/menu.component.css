@@ -1,0 +1,75 @@
+
+.top-menu{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    position: relative;
+    width: 7vh;
+    height: 28vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1vh;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+
+}
+
+.menu-item:last-child{
+    padding: 0;
+}
+
+.menu-item:last-child::before{
+    content: none;
+}
+
+.menu-item::before{
+    content: " ";
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    position: absolute;
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.menu-item i {
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    font-size: 1.5vh !important;
+}
+.menu-item a {
+    color: black;
+    text-align-last: center;
+    height: auto;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu-item:hover i{
+    color: #481fdc;
+}
+
+
+.menu-item:hover a{
+    color: #481fdc;
+}
+
+.active{
+    color: #481fdc !important;
+}
