@@ -18,16 +18,18 @@
     border-radius: 8px 8px 0 0px;
     overflow: hidden;
     width: 100%;
+    position: absolute
 
 }
 .title{
-    margin-top: 1.6rem;
-    font-size: 1.5rem;
+    margin-top: 3vh;
+    font-size: 4vh;
     color: #323232;
 }
 
 .subtitle{
     color: #481fdc;
+    font-size: 2vh;
 }
 
 .frases{
@@ -36,12 +38,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
+    padding-top: 24vh;
 }
 
 .social a{
     margin: 0 6px;
     color: black;
-    font-size: 16px;
+    font-size: 2vh;
 }
 .btns{
     width: 100%;
@@ -61,6 +65,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    font-size: 1.7vh;
 }
 .btn::before{
     content: '';
@@ -111,4 +116,28 @@
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+.foto::after{
+    content: '';
+    position: absolute;
+    left: -5%;
+    bottom: -20vh;
+    width: 50vh;
+    height: 25vh;
+    background: #ffffff;
+    transform: rotate(12deg);
+    -webkit-transform: rotate(-12deg);
+}
+
+.foto::before{
+    content: '';
+    position: absolute;
+    left: -8%;
+    bottom: -20vh;
+    width: 50vh;
+    height: 25vh;
+    background: #ffffff;
+    transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
 }
