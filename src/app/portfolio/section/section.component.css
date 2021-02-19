@@ -1,0 +1,252 @@
+.sobre-card{
+    border-radius: 0 4px 4px 0;
+    margin: 20px 0 0 0;
+    overflow-y: scroll;
+    padding: 30px;
+    position: relative;
+    height: 640px;
+    width: 700px;
+    background-color: white;
+}
+
+.pre-sobre-card{
+    height: 640px;
+}
+.pre-sobre-card::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 700px;
+    height: 30px;
+    background: #ffffff;
+
+}
+
+.pre-sobre-card::after{
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    height: 30px;
+    background: #ffffff;
+    z-index: 1;
+
+}
+
+.sobre-card::before{
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 1px;
+    height: 150vh;
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+
+.title2{
+    margin: 20px;
+    font-size: 20px;
+    color: #323232;
+    font-weight: 600;
+}
+.p-p{
+    color: #481fdc;
+}
+
+.sobre-mim{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.sobre-mim::after {
+    content: " ";
+    width: 100%;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.texto-sobre{
+    width: 50%;
+    margin: 20px;
+    color: #323232;
+    position: relative;
+}
+.texto-sobre::before{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.mais-info{
+    width: 50%;
+    text-align: right;
+    color: #323232 !important;
+}
+
+.mais-info li {
+    color: #646464;
+    padding: 11px 0 ;
+    margin: 0 20px;
+}
+
+.mais-info strong{
+    float: left;
+    margin-right: 8px;
+    padding: 1px 8px;
+    background: #78cc6d;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: none;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+}
+.section{
+    margin: 20px 0 ;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70px;
+    width: 70px;
+    background-color: #481fdc;
+    border-radius: 100%;
+}
+
+.text{
+    margin: 0 20px;
+    color: #323232;
+    text-align: center;
+}
+
+.pre-section{
+      display: flex;
+      flex: row;
+}
+
+.pre-section::after {
+    content: " ";
+    width: 100%;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+}
+
+.service::after {
+    content: " ";
+    width: 100%;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+
+.text-topic{
+    color: #646464;
+    font-size: 16px;
+}
+.lista-de-recurso{
+    padding-left: 0px;
+}
+
+.lista-de-recurso li{
+    font-size: 16px;
+    color: #646464;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400 !important;
+}
+
+.d{
+    display: none;
+}
+
+.disable{
+    opacity: .6;
+    text-decoration: line-through;
+}
+
+.number{
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.pricing{
+    font-size: 17px;
+    margin: 0 0 30px 0;
+}
+
+.rotate{
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+
+.text-buy{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 10px 0 0;
+}
+
+.lnks a:hover span{
+    color: #481fdc !important;
+}
+
+.lnks a:hover i{
+    color: #481fdc !important;
+}
+
+.lnks{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+.lnk{
+    line-height: 4;
+}
+
+
+.lnks::before {
+    content: " ";
+    width: 100%;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}

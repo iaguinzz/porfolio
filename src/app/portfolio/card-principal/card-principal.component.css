@@ -122,8 +122,8 @@
     content: '';
     position: absolute;
     left: -5%;
-    bottom: -20vh;
-    width: 50vh;
+    bottom: -13vh;
+    width: 80vh;
     height: 25vh;
     background: #ffffff;
     transform: rotate(12deg);
@@ -135,7 +135,7 @@
     position: absolute;
     left: -8%;
     bottom: -20vh;
-    width: 50vh;
+    width: 80vh;
     height: 25vh;
     background: #ffffff;
     transform: rotate(12deg);
