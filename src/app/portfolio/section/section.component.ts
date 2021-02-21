@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'pt-section',
   templateUrl: './section.component.html',
   styleUrls: ['./section.component.css']
 })
-export class SectionComponent implements OnInit {
+export class SectionComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+
+  
+
+  
 
 }

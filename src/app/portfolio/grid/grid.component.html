@@ -1,14 +1,14 @@
 <div class="container" style="padding-top: 10vh">
     <div class="row no-gutters">
-      <div class="col-1 col-md-1" style="height: 30vh; width: 10vw">
+      <div class="col-1 col-md-1" style="height: 30vh; width: 10vw; z-index:1">
         <ng-content select=[menu]></ng-content>
       </div>
       <div class="col-11 col-md-5">
-        <div class="container-fluid w-100 no-gutters" style="height: 75vh; width: 40vw">
+        <div class="container w-100" style="height: 75vh; width: 40vw; z-index: 2; padding-right:.01px;">
           <ng-content select=[card]></ng-content>
         </div>
       </div>
-      <div class="col-md-6 bg-dark w-75" style="height: 70vh; width: 20vw; z-index: 999">
+      <div class="col-md-6 w-100" style="height: 70vh; width: 30vw; z-index:1">
         <ng-content select=[section]></ng-content>
       </div>
     </div>

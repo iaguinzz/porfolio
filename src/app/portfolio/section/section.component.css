@@ -1,37 +1,18 @@
 .sobre-card{
-    border-radius: 0 4px 4px 0;
-    margin: 20px 0 0 0;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 2vh;
     overflow-y: scroll;
-    padding: 30px;
+    padding: 1vh;
     position: relative;
-    height: 640px;
-    width: 700px;
+    height: 100%;
+    width: 100%;
     background-color: white;
 }
 
 .pre-sobre-card{
-    height: 640px;
-}
-.pre-sobre-card::before{
-    content: '';
-    position: absolute;
-    top: 20px;
-    width: 700px;
-    height: 30px;
-    background: #ffffff;
-
+    height: 100%;
 }
 
-.pre-sobre-card::after{
-    content: '';
-    position: absolute;
-    bottom: -80px;
-    width: 100%;
-    height: 30px;
-    background: #ffffff;
-    z-index: 1;
-
-}
 
 .sobre-card::before{
     content: '';
@@ -47,7 +28,7 @@
 
 .title2{
     margin: 20px;
-    font-size: 20px;
+    font-size: 2vh;
     color: #323232;
     font-weight: 600;
 }
@@ -60,6 +41,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    height: 25vh;
+    padding: 0 10px 0 0
+
 }
 
 .sobre-mim::after {
@@ -77,28 +61,21 @@
     margin: 20px;
     color: #323232;
     position: relative;
+    font-size: 1.65vh;
 }
-.texto-sobre::before{
-    content: '';
-    position: absolute;
-    right: -20px;
-    top: 0;
-    width: 1px;
-    height: 100%;
-    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
-    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
-}
+
 
 .mais-info{
     width: 50%;
     text-align: right;
     color: #323232 !important;
+    padding: 1.6vh 0;
 }
 
 .mais-info li {
     color: #646464;
     padding: 11px 0 ;
-    margin: 0 20px;
+    font-size: 1.5vh;
 }
 
 .mais-info strong{
@@ -106,7 +83,7 @@
     margin-right: 8px;
     padding: 1px 8px;
     background: #78cc6d;
-    font-size: 14px;
+    font-size: 1.55vh;
     line-height: 20px;
     font-weight: 400;
     text-transform: none;
@@ -141,6 +118,7 @@
     margin: 0 20px;
     color: #323232;
     text-align: center;
+    font-size: 1.5vh;
 }
 
 .pre-section{
@@ -183,7 +161,7 @@
 }
 
 .lista-de-recurso li{
-    font-size: 16px;
+    font-size: 1.6vh;
     color: #646464;
     margin: 10px 0;
     padding: 5px;
@@ -216,7 +194,7 @@
 }
 
 .text-buy{
-    font-size: 14px;
+    font-size: 1.5vh;
     text-transform: uppercase;
     color: #000;
     margin: 0 10px 0 0;
