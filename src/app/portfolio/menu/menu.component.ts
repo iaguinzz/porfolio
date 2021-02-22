@@ -25,9 +25,9 @@ for (var i = 0; i < btns.length; i++) {
 
 
 $('.top-menu').on('click', 'a', function(){
-  $('.animated').addClass('d')
+  $('.animated').addClass('d-none')
   var id = $(this).attr('href');
-  $(id).removeClass('d');
+  $(id).removeClass('d-none');
   $(id).addClass('animated fadeInLeft');
 })
 

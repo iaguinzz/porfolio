@@ -32,9 +32,7 @@
     color: #323232;
     font-weight: 600;
 }
-.p-p{
-    color: #481fdc;
-}
+
 
 .sobre-mim{
     width: 100%;
@@ -108,8 +106,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70px;
-    width: 70px;
+    height: 7vh;
+    width: 7vh;
     background-color: #481fdc;
     border-radius: 100%;
 }
@@ -169,22 +167,18 @@
     font-weight: 400 !important;
 }
 
-.d{
-    display: none;
-}
-
 .disable{
     opacity: .6;
     text-decoration: line-through;
 }
 
 .number{
-    font-size: 42px;
+    font-size: 5vh;
     font-weight: 500;
 }
 
 .pricing{
-    font-size: 17px;
+    font-size: 2.3vh;
     margin: 0 0 30px 0;
 }
 
@@ -227,4 +221,270 @@
     position: absolute;
     background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
     background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+
+/*############################        RESUMO          #########################33*/
+
+.title-skills span{
+    padding: 3px 0 0 10px;
+    color: #323232;
+    font-size: 1.7vh;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.title-skills::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);}
+
+
+.nome{
+    margin: 0 0 8px 0;
+    font-size: 1.8vh;
+    line-height: 14px;
+    color: #626262;
+}
+
+.title-skills{
+    display: flex;
+    padding: 30px 0;
+    position: relative;
+}
+
+.skills{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill ul {
+    padding: 0;
+    font-size: 1.8vh;
+}
+
+.dev{
+    width: 50%;
+    padding: 0 0 0 3vh;
+}
+
+.barra{
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: #d8dbe2;
+}
+
+.preenchido{
+    position: absolute;
+    height: 5px;
+    background-color: #481fdc;
+}
+
+.title2-resumo{
+    margin: 20px;
+    font-size: 20px;
+    color: #323232;
+    font-weight: 600;
+}
+
+.title2-resumo::before{
+    content: " ";
+    width: 100%;
+    margin: 40px 0 0 0;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.dev ul li{
+    padding: 20px 0;
+}
+
+.exp{
+    width: 50%;
+    padding:  0 0 0 3vh;
+}
+
+.texts{
+    padding: 30px 0 0 0;
+}
+
+.year{
+    display: inline-block;
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid #481fdc;
+    padding: 0 5px;
+    font-size: 1.5vh;
+    font-weight: 400;
+    margin:  0 0 20px 0;
+    color: #481fdc;
+}
+
+.cargo{
+    font-size: 1.5vh;
+    color: #323232; 
+    font-weight: 500;
+}
+
+.company{
+    margin: 0 0 11px 0;
+    font-size: 1.4vh;
+    color: #999999;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.desc{
+    font-size: 1.6vh;
+    line-height: 1.8rem;
+}
+
+
+.conhecimento{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.knowledge .skill li {
+ display: flex;
+}
+
+
+
+/*############################        PROJETOS          #########################33*/
+
+.imageP {
+    width: 300px;
+    overflow: hidden;
+}
+
+.imageP img{
+    background: purple;
+    transition: .5s ease;
+}
+
+.imageP:hover img {
+    opacity: .3;
+    transform: scale(1.5);
+}
+
+.imageP:hover p{
+    opacity: 1;
+}
+
+.fa-link{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    
+}
+
+.projeto1 p{
+    opacity: 0;
+    position: absolute;
+    transition: .5s ease;
+    color: black;
+}
+
+.projeto1{
+    margin: 10px 0;
+}
+
+.projetos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*############################        CONTATOSS        #########################33*/
+
+
+.contact{
+    border-radius: 0 4px 4px 0;
+    margin: 20px 0 0 0;
+    overflow-y: scroll;
+    padding: 1vh;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.d{
+    display: none; 
+}
+
+
+.p-p{
+    color: #481fdc;
+}
+
+.contact::after {
+    content: " ";
+    width: 100%;
+    left: 0;
+    height: 1px;
+    position: absolute;
+    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+input{
+    font-size: 1.5vh;
+    width: 100%;
+    height: 25%;
+    padding: 5px;
+}
+
+textarea{
+    font-size: 1.6vh;
+    width: 50vh;
+    height: 70px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn-text-submit{
+    color: black;
+}
+
+.button{
+    width: 100%;
+    margin: 120px !important;
+    height: 2.81rem;
+    line-height: 2.8rem;
+    border-radius: 7px;
+    background-color: #0070f3;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    color: white;
+    -webkit-transition: background 0.2s ease,color 0.2s ease, box-shadow 0.2s ease;
+    transition: background 0.2s ease,color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: inherit;
+    padding: 15px 35px;
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
 }
