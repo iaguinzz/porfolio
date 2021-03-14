@@ -26,22 +26,28 @@
           <div class="icon">
             <i class="fa fa-code" style="color: white; font-size: 3vh;"></i>
           </div>
-          <div class="title2">
+          <div class="title2" style="text-align: center;">
             Software Development
           </div>
           <div class="text">
-            Modern and mobile-ready website that will help you reach all of your marketing.
+            Desenvolvimento de software é uma das habilidades mais requisitadas do mercado TECH.
+
+Desenvolvo software desde pequeno, faço isso em python, mas estou sempre disposto a aprender coisas.
+
           </div>
         </div>
   <div class="section">
     <div class="icon">
-      <i class="fab fa-database" style="color: white; font-size: 3vh;"></i>
+      <i class="fa fa-database" style="color: white; font-size: 3vh;"></i>
     </div>
     <div class="title2">
       Data mining
     </div>
     <div class="text">
-      Music copying, transcription, arranging and composition services, lorem ipsun dolor sit 
+      Também  conhecido como Web Scraping é o processo de mineração de dados, usado para resolução de problemas de qualquer esfera
+
+Minerar dados é o que eu faço, para desenvolver soluções limpas, flexíveis e eficientes.
+
     </div>
   </div>
       </div>
@@ -54,7 +60,10 @@
             Automação Selenium
           </div>
           <div class="text">
-            Advertising services include television, radio, print, mail and web.
+            Usado principalmente para testar aplicativos da web e de vez em quando, quando se faz necessário, usado também para Web Scraping.
+
+O selenium fornece um ótimo kit para automação de navegadores.
+
           </div>
         </div>
   <div class="section">
@@ -65,91 +74,12 @@
       Python Development
     </div>
     <div class="text">
-      Music copying, transcription, arranging and composition services, lorem ipsun dolor sit 
+      Python é minha “main” linguagem, sempre que preciso resolver um problema, seja ele simples como p.e: consumir, construir API ou mais complexo como desenvolvimento de software Cross-Platform
+
     </div>
   </div>
       </div>
-      <!--- <div class="title2">
-        <span class="p-p">P</span>reço
-      </div>
-      <div class="service">
-        <div class="pre-section">
-          <div class="section">
-            <div class="">
-              <i class="fa fa-tachometer rotate" style="color: #481fdc; font-size: 20px;"></i>
-            </div>
-            <div class="pricing">
-              Básico
-            </div>
-            <div class="text">
-              <span class="dolar">$</span>
-              <span class="number">22</span>
-              <span class="text-topic">hora</span>
-            </div>
-            <ul class="lista-de-recurso">
-              <li>
-                Desenvolvimento Web
-              </li>
-              <li>
-                Publicidade
-              </li>
-              <li>
-                Desenvolvimento de Games
-              </li>
-              <li class="disable">
-                Composição Musical
-              </li>
-              <li class="disable">
-                Fotografia
-              </li>
-            </ul>
-            <div class="lnks">
-              <a href="#" class="lnk">
-                <span class="text-buy">Comprar Básico</span>
-                <i class="fa fa-tachometer rotate" style="color: #000; font-size: 16px;"></i>
-              </a>
-            </div>
-          </div>
-      <div class="section">
-        <div class="">
-          <i class="fa fa-tachometer" style="color: #481fdc; font-size: 3vh;"></i>
-        </div>
-        <div class="pricing">
-          Pro
-        </div>
-        <div class="text">
-          <span class="dolar">$</span>
-          <span class="number">48</span>
-          <span class="text-topic">hora</span>
-        </div>
-        <ul class="lista-de-recurso">
-          <li>
-            Desenvolvimento Web
-          </li>
-          <li>
-            Publicidade
-          </li>
-          <li>
-            Desenvolvimento de Games
-          </li>
-          <li class="">
-            Composição Musical
-          </li>
-          <li class="">
-            Fotografia
-          </li>
-        </ul>
-        <div class="lnks">
-          <a href="#" class="lnk">
-            <span class="text-buy">Comprar Pro</span>
-            <i class="fa fa-tachometer" style="color: #000; font-size: 16px;"></i>
-          </a>
-        </div>
-         
-      </div>
-        </div>
-    </div>
-    -->
+      
   </div>
   </div>
 </div>
@@ -172,22 +102,15 @@
           </div>
           <span>experiencias</span>
         </div>
-        <div class="texts">
-          <div class="year">2014 - 2016</div>
-          <div class="cargo">Desenvolvedor Front-End</div>
+        <div class="texts" *ngFor="let exp of experiencias">
+          <div class="year">{{exp.periodo}}</div>
+          <div class="cargo">{{exp.cargo}}</div>
           <div class="company">
-            <i class="fab fa-twitter" style="color: #00ACEE;"></i>
-             Twitter</div>
-          <div class="desc">Collaborate with creative and development teams on the execution of ideas.</div>
+            <i class="fa fa-handshake-o" style="color: #481fdc"></i>
+             {{exp.company}}</div>
+          <div class="desc">{{exp.desc}}</div>
         </div>
-        <div class="texts">
-          <div class="year">2011 - 2014</div>
-          <div class="cargo">Estágio Banco de Dados SQL</div>
-          <div class="company">
-            <i class="fab fa-snapchat-ghost" style="color: #FFFC00;"></i>
-              Snapchat</div>
-          <div class="desc">Collaborate with creative and development teams on the execution of ideas.</div>
-        </div>
+        
       </div>
       <div class="exp">
         <div class="title-skills">
@@ -196,22 +119,16 @@
           </div>
           <span>Formação</span>
         </div>
-        <div class="texts">
-          <div class="year">2008 - 2012</div>
-          <div class="cargo">Analise e Desenvolvimento de Sistemas</div>
+        <div class="texts" *ngFor="let form of formacoes">
+          <div class="year">{{form.periodo}}</div>
+          <div class="cargo">{{form.title}}</div>
           <div class="company">
-            <i class="fa fa-user-graduate"></i>
-             Fatec</div>
-          <div class="desc">Collaborate with creative and development teams on the execution of ideas.</div>
+            <i class="fa fa-graduation-cap" style="color: #481fdc"></i>
+             {{form.intituicao}}</div>
+          <div class="desc">{{form.desc}}</div>
         </div>
-        <div class="texts">
-          <div class="year">2011 - 2012</div>
-          <div class="cargo">Curso Full Stack Javascript</div>
-          <div class="company">
-            <i class="fa fa-user-graduate" style="color: #FFFC00;"></i>
-            Udemy</div>
-          <div class="desc">Collaborate with creative and development teams on the execution of ideas.</div>
-        </div>
+        
+        
       </div> 
        
     </div>
@@ -225,62 +142,15 @@
           </div>
           <div class="skill">
             <ul>
-              <li>
+              <li *ngFor="let conhecimento of conhecimentos">
                 <div class="icon-conhecimento">
                   <i class="fa fa-check" style="color: #481fdc; font-weight: 600; font-size: 15px;"></i>
                 </div>
                 <div class="text-conhecimento">
-                  &nbsp; Website Hosting
+                  &nbsp; {{conhecimento}}
                 </div>
               </li>
-              <li>
-                <div class="icon-conhecimento">
-                  <i class="fa fa-check" style="color: #481fdc; font-weight: 600; font-size: 15px;"></i>
-                </div>
-                <div class="text-conhecimento">
-                  &nbsp; Website Hosting
-                </div>
-              </li>
-              <li>
-                <div class="icon-conhecimento">
-                  <i class="fa fa-check" style="color: #481fdc; font-weight: 600; font-size: 15px;"></i>
-                </div>
-                <div class="text-conhecimento">
-                  &nbsp; Website Hosting
-                </div>
-              </li>
-              <li>
-                <div class="icon-conhecimento">
-                  <i class="fa fa-check" style="color: #481fdc; font-weight: 600; font-size: 15px;"></i>
-                </div>
-                <div class="text-conhecimento">
-                  &nbsp; Website Hosting
-                </div>
-              </li>
-              <li>
-                <div class="icon-conhecimento">
-                  <i class="fa fa-check" style="color: #481fdc; font-weight: 600; font-size: 15px;"></i>
-                </div>
-                <div class="text-conhecimento">
-                  &nbsp; Website Hosting
-                </div>
-              </li>
-              <li>
-                <div class="icon-conhecimento">
-                  <i class="fa fa-check" style="color: #481fdc; font-weight: 600; font-size: 15px;"></i>
-                </div>
-                <div class="text-conhecimento">
-                  &nbsp; Website Hosting
-                </div>
-              </li>
-              <li>
-                <div class="icon-conhecimento">
-                  <i class="fa fa-check" style="color: #481fdc; font-weight: 600; font-size: 15px;"></i>
-                </div>
-                <div class="text-conhecimento">
-                  &nbsp; Website Hosting
-                </div>
-              </li>
+              
               
             </ul>
           </div>
@@ -296,7 +166,7 @@
             <ul>
               <li>
                 <div class="nome">
-                  Javascript
+                  Python
                 </div>
                 <div class="progresso">
                   <div class="slice">
@@ -307,18 +177,18 @@
               </li>
               <li>
                 <div class="nome">
-                  Angular JS
+                  Angular 7+
                 </div>
                 <div class="progresso">
                   <div class="slice">
                     <div class="barra"></div>
-                    <div class="preenchido" style="width: 15%"></div>
+                    <div class="preenchido" style="width: 23%"></div>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="nome">
-                  React Native
+                  Flutter
                 </div>
                 <div class="progresso">
                   <div class="slice">
@@ -329,7 +199,7 @@
               </li>
               <li>
                 <div class="nome">
-                  React JS
+                  Flask
                 </div>
                 <div class="progresso">
                   <div class="slice">
@@ -345,7 +215,7 @@
                 <div class="progresso">
                   <div class="slice">
                     <div class="barra"></div>
-                    <div class="preenchido" style="width: 10%"></div>
+                    <div class="preenchido" style="width: 26%"></div>
                   </div>
                 </div>
               </li>
@@ -356,17 +226,7 @@
                 <div class="progresso">
                   <div class="slice">
                     <div class="barra"></div>
-                    <div class="preenchido" style="width: 5%"></div>
-                  </div>
-                </div>
-              </li><li>
-                <div class="nome">
-                  Flutter
-                </div>
-                <div class="progresso">
-                  <div class="slice">
-                    <div class="barra"></div>
-                    <div class="preenchido" style="width: 29%"></div>
+                    <div class="preenchido" style="width: 15%"></div>
                   </div>
                 </div>
               </li>
@@ -385,47 +245,15 @@
       <span class="p-p">Proje</span>tos
     </div>
     <div class="projetos">
-      <div class="projeto1">
-        <div class="imageP">
-          <p style="top: 40%; left: 6%; font-weight: 600">Zoho Online Store</p>
-          <p style="top: 43%; left: 6%">Website Shopping</p>
-          <img style="width: 300px; text-align: center" src="imgs/zoho.png">
+    
+      <div class="projeto1" *ngFor="let proj of projetos">
+        <a [href]="proj.url" target="new:blank">
+          <div class="imageP">
+            <p style="top: 40%; left: 6%; font-weight: 600">{{proj.title}}</p>
+            <p style="top: 43%; left: 6%">{{proj.desc}}</p>
+            <img style="width: 200px; text-align: center" [src]="proj.img">
         </div>
-      </div>
-      <div class="projeto1">
-        <div class="imageP">
-          <p style="top: 40%; left: 58%; font-weight: 600">Serviço de Email</p>
-          <p style="top: 43%; left: 58%">Aplicativo Mobile</p>
-          <img style="width: 300px; text-align: center" src="imgs/email.png">
-        </div>
-      </div>
-      <div class="projeto1">
-        <div class="imageP">
-          <p style="top: 76%; left: 6%; font-weight: 600">Mercado de Frutas</p>
-          <p style="top: 79%; left: 6%">Aplicativo Mobile</p>
-          <img style="width: 300px; text-align: center" src="imgs/fruit_market.jpg">
-        </div>
-      </div>
-      <div class="projeto1">
-        <div class="imageP">
-          <p style="top: 76%; left: 58%; font-weight: 600">Player de Música</p>
-          <p style="top: 79%; left: 58%">Aplicativo Mobile</p>
-          <img style="width: 300px; text-align: center" src="imgs/music_player.png">
-        </div>
-      </div>
-      <div class="projeto1">
-        <div class="imageP">
-          <p style="top: 112%; left: 6%; font-weight: 600">Netflix Redesign</p>
-          <p style="top: 115%; left: 6%">Website Streaming</p>
-          <img style="width: 300px; text-align: center" src="imgs/netflix_redesign.jpg">
-        </div>
-      </div>
-      <div class="projeto1">
-        <div class="imageP">
-          <p style="top: 112%; left: 58%; font-weight: 600">PayPal Redesign</p>
-          <p style="top: 115%; left: 58%">Website</p>
-          <img style="width: 300px; text-align: center" src="imgs/paypal_redesign.jpg">
-        </div>
+        </a>
       </div>
     </div>
 </div>
@@ -454,10 +282,10 @@
             <textarea name="message" placeholder="Sua mensagem"></textarea>
           </div>
         </div>
-        <div class="align-left">
+        <div class="col col-d-6 col-t-6 col-m-12" style="margin: .5rem 0">
           <a href="#" class="button" onclick="$('#cform').submit(); return false;">
             <span class="btn-text-submit">Enviar Mensagem</span>
-            <span class="btn-text-submit"></span>
+            <span class="fa fa-send mx-2"></span>
           </a>
         </div>
     </div>

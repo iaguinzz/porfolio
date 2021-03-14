@@ -20,7 +20,7 @@
     right: 50%;
     top: 0;
     width: 1px;
-    height: 150vh;
+    height: 100vh;
     background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
     background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
 }
@@ -347,7 +347,7 @@
 
 .desc{
     font-size: 1.6vh;
-    line-height: 1.8rem;
+    margin: 0 10px 0 0
 }
 
 
@@ -446,13 +446,12 @@ input{
     width: 100%;
     height: 25%;
     padding: 5px;
+    margin: .5rem 0;
 }
 
 textarea{
     font-size: 1.6vh;
-    width: 50vh;
-    height: 70px;
-    margin-top: 20px;
+    margin-top: .5rem;
     padding: 5px;
 }
 
@@ -460,28 +459,24 @@ textarea{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.btn-text-submit{
-    color: black;
-}
 
 .button{
     width: 100%;
-    margin: 120px !important;
-    height: 2.81rem;
-    line-height: 2.8rem;
     border-radius: 7px;
-    background-color: #0070f3;
+    background-color: #481fdc;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
-    color: white;
+    color: #fff;
     -webkit-transition: background 0.2s ease,color 0.2s ease, box-shadow 0.2s ease;
     transition: background 0.2s ease,color 0.2s ease, box-shadow 0.2s ease;
     outline: none;
     cursor: pointer;
     border: none;
-    font-size: inherit;
-    padding: 15px 35px;
+    font-size: .65rem;
+    padding: .7rem;
+
 }
 
 .msg{

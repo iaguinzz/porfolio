@@ -20,6 +20,9 @@ import { SectionComponent } from './section/section.component';
     exports: [
         PortfolioComponent,
         CommonModule
+    ],
+    imports: [
+        CommonModule
     ]
 })
 export class PortfolioModule{

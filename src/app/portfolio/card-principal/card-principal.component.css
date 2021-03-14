@@ -137,6 +137,6 @@
     width: 80vh;
     height: 25vh;
     background: #ffffff;
-    transform: rotate(12deg);
+    /* transform: rotate(12deg); */
     -webkit-transform: rotate(12deg);
 }
