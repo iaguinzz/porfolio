@@ -75,16 +75,11 @@ export class SectionComponent {
       title: 'TGS TI',
       desc: 'Site empresarial',
       img: 'assets/imgs/tgsti.png',
-      url: 'https://tgs-ti.web.app/'
+      url: 'https://tgsti.iagodejsilva.com'
     }
   ]
 
   constructor() { }
-
-
-  
-
-  
 
 }
 
