@@ -81,6 +81,15 @@ export class SectionComponent {
 
   constructor() { }
 
+  linkedin: string = "https://www.linkedin.com/in/iago-silva-642665207";
+
+  
+
+  notImplementedYet(){
+    alert("Quer me enviar uma mensagem? Me mande pelo LinkedIn")
+  
+  }
+
 }
 
 class Experiencia{

@@ -14,20 +14,9 @@
 }
 
 
-.sobre-card::before{
-    content: '';
-    position: absolute;
-    right: 50%;
-    top: 0;
-    width: 1px;
-    height: 100vh;
-    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
-    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
-}
-
 
 .title2{
-    margin: 20px 5px;
+    margin: 20px;
     font-size: 2vh;
     color: #323232;
     font-weight: 600;
@@ -366,18 +355,23 @@
 /*############################        PROJETOS          #########################33*/
 
 .imageP {
-    width: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     overflow: hidden;
 }
 
 .imageP img{
     background: purple;
+    width: 80%;
     transition: .5s ease;
+    text-align: center
 }
 
 .imageP:hover img {
     opacity: .3;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .imageP:hover p{
@@ -431,139 +425,24 @@
     color: #481fdc;
 }
 
-.contact::after {
-    content: " ";
+
+.submit-btn{
+    background-color: transparent;
+    border: grey 1px solid;
     width: 100%;
-    left: 0;
-    height: 1px;
-    position: absolute;
-    background: -webkit-radial-gradient(center, ellipse cover, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
-    background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+    height: 4vh;
+    font-size: 1.5vh;
 }
 
-.footer-newsletter-form {
-    padding: 25px 0 0;
-  }
-  
-  .footer-newsletter-form .form-group {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  
-  @media (min-width: 480px) {
-    .footer-newsletter-form .form-group {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-    }
-  }
-  
-  .footer-newsletter-form .form-group input {
-    height: 60px;
-    color: #666666;
-    border-radius: 5px;
-    background: rgba(72, 31, 220, 0.07);
-    padding-left: 17px;
-    border-color: transparent;
-  }
-  
-  @media (min-width: 480px) {
-    .footer-newsletter-form .form-group input {
-      margin-right: 10px;
-      height: 60px;
-      width: calc(100% - 187px);
-    }
-  }
-  
-  .footer-newsletter-form .form-group input::-webkit-input-placeholder {
-    color: #878b90;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: -0.9px;
-  }
-  
-  .footer-newsletter-form .form-group input:-ms-input-placeholder {
-    color: #878b90;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: -0.9px;
-  }
-  
-  .footer-newsletter-form .form-group input::-ms-input-placeholder {
-    color: #878b90;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: -0.9px;
-  }
-  
-  .footer-newsletter-form .form-group input::placeholder {
-    color: #878b90;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: -0.9px;
-  }
-  
-  .footer-newsletter-form .form-group button {
-    color: #ffffff;
-    font-weight: 700;
-    letter-spacing: -1.12px;
-    border-radius: 3px;
-    background-color: #481fdc;
-    border: 0;
-    width: 100%;
-    margin-top: 10px;
-    height: 50px;
-    font-size: 17px;
-  }
-  
-  @media (min-width: 480px) {
-    .footer-newsletter-form .form-group button {
-      margin-top: 0px;
-      height: 60px;
-      width: 177px;
-      font-size: 18px;
-    }
-  }
-  
-  .footer-newsletter-form .form-text {
-    color: #666666;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: -0.43px;
-    line-height: 28px;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  
-  .footer-newsletter-form .form-text i {
-    font-size: 14px;
-    margin-right: 7px;
-  }
-  
-  .single-footer .footer-text p {
-    color: #666666;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.4px;
-    line-height: 28px;
-  }
-  
-  @media (min-width: 992px) {
-    .single-footer .footer-text p {
-      padding-right: 22px;
-    }
-  }
+.submit-btn:hover{
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
 
-.msg{
-    display: flex;
-    justify-content: center;
+
+.form-group-contact{
+    padding: 1vh 2vh;
 }

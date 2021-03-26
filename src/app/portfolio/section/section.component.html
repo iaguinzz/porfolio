@@ -251,7 +251,7 @@ O selenium fornece um ótimo kit para automação de navegadores.
           <div class="imageP">
             <p style="top: 40%; left: 6%; font-weight: 600">{{proj.title}}</p>
             <p style="top: 43%; left: 6%">{{proj.desc}}</p>
-            <img style="width: 200px; text-align: center" [src]="proj.img">
+            <img [src]="proj.img">
         </div>
         </a>
       </div>
@@ -266,21 +266,18 @@ O selenium fornece um ótimo kit para automação de navegadores.
       <span class="p-p">Entrar em</span>
       Contato
     </div>
-    <div class="footer-newsletter-form">
+    <div class="form-group-contact">
                     
-        <form action="">
               <div class="form-group">
                 <input  type="text" class="form-control mt-2" placeholder="Nome">
                 <input  type="text" class="form-control mt-2" placeholder="Telefone">
                 <input  type="text" class="form-control mt-2" placeholder="Email">
                 <textarea type="text" class="form-control my-2" placeholder="Sua mensagem" style="height: 20vh"></textarea>
-                <button class="submit-btn">Enviar</button>
+                <a target="new:blank" [href]="linkedin">
+                  <button (click)="notImplementedYet()" class="submit-btn">Enviar</button>
+                </a>
               </div>
-              <p class="form-text"><i class="fa fa-lock"></i>Seus dados estão protegidos. Não enviarei email em massa!</p>
-        </form>
+              <p class="text-center" style="font-size: 1.5vh;"><i class="fa fa-lock"></i> Seus dados estão protegidos.</p>
       </div>
-    <div class="msg">
-      <img src="imgs/msg.png" style="width: 250px; margin-top: 15px;" alt="">
-    </div>  
   </div>
 </div> 
