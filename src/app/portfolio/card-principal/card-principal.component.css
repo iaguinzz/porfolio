@@ -2,8 +2,8 @@
     z-index: 2;
     border-radius: 8px;
     background-color: white;
-    height: 100%;
-    width: 100%;
+    width: 450px;
+    height: 700px;  
     position: relative;
 }
 
@@ -138,5 +138,4 @@
     height: 25vh;
     background: #ffffff;
     /* transform: rotate(12deg); */
-    -webkit-transform: rotate(12deg);
 }

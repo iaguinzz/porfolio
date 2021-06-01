@@ -7,6 +7,7 @@ import { CardPrincipalComponent } from './card-principal/card-principal.componen
 import { GridComponent } from './grid/grid.component';
 import { MenuComponent } from './menu/menu.component';
 import { SectionComponent } from './section/section.component';
+import { CertificadosComponent } from './certificados/certificados.component';
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { SectionComponent } from './section/section.component';
         CardPrincipalComponent,
         GridComponent,
         MenuComponent,
-        SectionComponent
+        SectionComponent,
+        CertificadosComponent
     ],
     exports: [
         PortfolioComponent,
